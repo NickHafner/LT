@@ -1,5 +1,5 @@
 name: lt_online
-description: A new Flutter project.
+description: Workout Tracking App
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -29,16 +29,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  mobx: ^2.0.0
+  flutter_mobx: ^2.0.0
   cupertino_icons: ^1.0.2
+  cloud_firestore: ^3.1.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  build_runner: ^2.1.7
+  mobx_codegen: ^2.0.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
