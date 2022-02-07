@@ -16,6 +16,8 @@ dependencies:
   mobx: ^2.0.6+1
   flutter_mobx: ^2.0.4
   flutter_dotenv: ^5.0.2
+  json_serializable: ^6.1.4
+  freezed: ^1.1.1
 
 dev_dependencies:
   flutter_test:
