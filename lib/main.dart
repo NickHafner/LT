@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lt_online/screens/profile.dart';
-import 'package:lt_online/screens/login.dart';
+import 'package:lt_online/screens/app/profile.dart';
+import 'package:lt_online/screens/loginProcess/login.dart';
+import 'package:lt_online/screens/loginProcess/signup.dart';
 import 'package:lt_online/screens/splash.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -24,19 +25,20 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Supabase Flutter',
       theme: ThemeData.dark().copyWith(
-        primaryColor: Colors.green,
+        primaryColor: const Color.fromARGB(255, 103, 9, 226),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             onPrimary: Colors.white,
-            primary: Colors.green,
+            primary: const Color.fromARGB(255, 103, 9, 226),
           ),
         ),
       ),
-      initialRoute: '/account',
+      initialRoute: '/login',
       routes: <String, WidgetBuilder>{
         '/': (_) => const SplashPage(),
         '/login': (_) => const LoginPage(),
-        '/profile': (_) => const ProfilePage(),
+        '/signup': (_) => const SignupPage(),
+        '/main': (_) => const ProfilePage(),
       },
     );
   }

@@ -101,11 +101,6 @@ class _ProfilePageState extends AuthRequiredState<ProfilePage> {
             decoration: const InputDecoration(labelText: 'User Name'),
           ),
           const SizedBox(height: 18),
-          TextFormField(
-            controller: _websiteController,
-            decoration: const InputDecoration(labelText: 'Website'),
-          ),
-          const SizedBox(height: 18),
           ElevatedButton(
               onPressed: _updateProfile,
               child: Text(_loading ? 'Saving...' : 'Update')),
